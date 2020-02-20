@@ -3,9 +3,11 @@ import { useParams } from "react-router-dom";
 import { gql } from "apollo-boost";
 import { useQuery } from "@apollo/react-hooks";
 import styled from "styled-components";
+import Cast from '../components/Cast';
 
 const IMAGE_PATH = 'https://image.tmdb.org/t/p/w500';
 
+// mutiple queries
 const GET_DETAILS = gql`
   query GetDetails($id: Int!) {
     details(movie_id: $id) {
@@ -36,12 +38,12 @@ export default () => {
     <Container>
       <Column>
         {loading ? <Title>"Loading..."</Title> :
-          data.details && (
+          data && (
             <>
               <Title style={data.details.title.length < 20 ? { fontSize: '65px' } : { fontSize: '45px' }}>{data.details.title}</Title>
               <Subtitle>Rate: {data.details.vote_average}</Subtitle>
               <Subtitle>Popularity: {Math.floor(data.details.popularity)}</Subtitle>
-              {data.credits && <Cast>{data.credits.slice(0, 4).map((item, i) => i < 3 ? `${item.name}, ` : `${item.name}`)}</Cast>}
+              {data.credits && <Subtitle>Cast: {data.credits.slice(0, 4).map((item, i) => <Cast id={item.id} name={item.name} />)}</Subtitle>}
               <Description>{data.details.overview}</Description>
             </>
           )}
@@ -79,12 +81,12 @@ const Subtitle = styled.h4`
   margin-bottom: 4px;
 `;
 
-const Cast = styled.p`
+/* const Cast = styled.p`
   font-size: 24px;
   font-weight: bold;
   color: #252829;
   margin-bottom: 20px;
-`;
+`; */
 
 const Description = styled.p`
   font-size: 28px;
