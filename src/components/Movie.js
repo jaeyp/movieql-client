@@ -14,11 +14,14 @@ export default ({ id, bg }) => {
 };
 
 const Container = styled.div`
-  height: 300px;
+  height: 200px;
   width: 100%;
   box-shoadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   overflow: hidden;
   border-radius: 7px;
+  @media only screen and (min-width: 1080px) {
+    height: 300px;
+  }
 `
 
 const Poster = styled.div`

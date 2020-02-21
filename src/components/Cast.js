@@ -27,10 +27,14 @@ const StyledLink = styled(Link)`
 `
 // Applying styled components to tagname.
 const Container = styled.p`
-  font-size: 24px;
-  font-weight: 500;
-  color: #252829;
-  margin: 5px 0;
-  padding: 5px 10px;
-  display: inline-block;
+  font-size: 18px;
+  margin: 0 8%;
+  @media only screen and (min-width: 1080px) {
+    font-size: 24px;
+    font-weight: 500;
+    color: #252829;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: inline-block;
+  }
 `

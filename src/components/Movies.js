@@ -12,7 +12,8 @@ export default ({ list, onLoadMore }) => {
       (document.documentElement && document.documentElement.scrollTop) ||
       document.body.scrollTop;
     if (scrollHeight - innerHeight - scrollTop <= 0) {
-      onLoadMore();
+      /* infinite scroll */
+      onLoadMore && onLoadMore()
     }
   }
 
@@ -32,7 +33,10 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 25px;
-  width: 50%;
+  width: 80%;
   position: relative;
   top: -50px;
+  @media only screen and (min-width: 1080px) {
+    width: 50%;
+  }
 `;

@@ -26,10 +26,11 @@ export default () => {
     <Container>
       <Header>
         <Title>MovieQL</Title>
-        <Subtitle>by Jaehyun Park</Subtitle>
+        <Subtitle>Movie app built with React, Apollo and GraphQL</Subtitle>
       </Header>
       {loading && <Loading>Loading...</Loading>}
       {!loading && data.list && (
+        /* TODO: add two buttons for ordering by popularity and rate */
         <Movies
           list={data.list}
           onLoadMore={() => { /* infinite scroll */
@@ -64,11 +65,17 @@ const Header = styled.header`
 const Title = styled.h1`
   font-size: 60px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  @media only screen and (min-width: 1080px) {
+    font-size: 80px;
+  }
 `;
 
 const Subtitle = styled.h3`
-  font-size: 35px;
+  font-size: 25px;
+  @media only screen and (min-width: 1080px) {
+    font-size: 35px;
+  }
 `;
 
 const Loading = styled.div`
