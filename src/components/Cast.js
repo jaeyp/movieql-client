@@ -6,7 +6,9 @@ export default ({ id, name }) => {
   return (
     <Container>
       <StyledLink to={`/person/${id}`}>
-        {name}
+        <Button>
+          {name}
+        </Button>
       </StyledLink>
     </Container>
   )
@@ -25,6 +27,7 @@ const StyledLink = styled(Link)`
     color: white;
   }
 `
+
 // Applying styled components to tagname.
 const Container = styled.p`
   font-size: 18px;
@@ -36,5 +39,27 @@ const Container = styled.p`
     margin: 5px 0;
     padding: 5px 10px;
     display: inline-block;
+  }
+`
+
+const Button = styled.div`
+  background: palevioletred;
+  color: white;
+
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 500;
+  text-align: center;
+  margin: 0.4em;
+  padding: 0em 0.5em 0.1em 0.5em;
+  border: 4px solid palevioletred;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  :hover {
+    cursor:pointer;
+    color: black;
+  }
+  @media only screen and (min-width: 1080px) {
+    margin: 0em;
   }
 `

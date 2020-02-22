@@ -79,7 +79,7 @@ const Box = styled.div`
 
 const Biography = styled.div`
   font-size: 18px;
-  /* multiline truncation with ellipsis */
+  /* multi-line truncation with ellipsis */
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 6;

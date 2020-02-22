@@ -91,13 +91,6 @@ const Subtitle = styled.h4`
   }
 `;
 
-/* const Cast = styled.p`
-  font-size: 24px;
-  font-weight: bold;
-  color: #252829;
-  margin-bottom: 20px;
-`; */
-
 const Description = styled.p`
   font-size: 20px;
   margin-top: 15px;
@@ -115,6 +108,7 @@ const Poster = styled.div`
   background-image: url(${props => props.bg});
   background-size: cover;
   background-position: center center;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   @media only screen and (min-width: 1080px) {
     width: 25%;
     border-radius: 0px;
