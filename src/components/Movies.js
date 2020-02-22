@@ -28,17 +28,16 @@ const Top = styled.div`
   }
 `
 
-export default ({ list, next, onLoadMore }) => {
+export default ({ list, onLoadMore }) => {
   const [showTop, setShowTop] = useState(false)
   const [page, setPage] = useState(1);
   const handleScroll = () => {
     const { innerHeight } = window;
     const { scrollHeight } = document.body;
-    const scrollTop =
-      (document.documentElement && document.documentElement.scrollTop) ||
-      document.body.scrollTop;
+    const scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+
+    /* infinite scroll */
     if (scrollHeight - innerHeight - scrollTop <= 0) {
-      /* infinite scroll */
       onLoadMore && onLoadMore(page + 1)
       setPage(page + 1)
     }
