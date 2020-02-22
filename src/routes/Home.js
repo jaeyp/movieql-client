@@ -83,13 +83,16 @@ const Container = styled.div`
 
 const Order = styled.div`
   position: absolute;
-  top: 28%;
+  top: 25%;
   width: 100%;
   height: 10%;
   display: flex;
   flex-direction: wrap;
   justify-content: center;
   align-items: center;
+  @media only screen and (min-width: 1080px) {
+    top: 28%;
+  }
 `
 
 const Header = styled.header`
@@ -105,17 +108,18 @@ const Header = styled.header`
 
 const Title = styled.h1`
   margin-top: 8%;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 600;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   @media only screen and (min-width: 1080px) {
     margin-top: 4%;
     font-size: 80px;
+    margin-bottom: 30px;
   }
 `;
 
 const Subtitle = styled.h3`
-  font-size: 25px;
+  font-size: 20px;
   width: 80%;
   text-align: center;
   @media only screen and (min-width: 1080px) {

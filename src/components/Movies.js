@@ -14,7 +14,10 @@ const Top = styled.div`
   display: ${props => props.show ? "block" : "none"};
   position: fixed;
   top: 90%;
-  left: 90%;
+  left: 80%;
+  @media only screen and (min-width: 1080px) {
+    left: 90%;
+  }
   .home {
     font-size: 2.4em;
     color: hotpink;
@@ -66,11 +69,12 @@ export default ({ list, onLoadMore }) => {
 const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 25px;
-  width: 70%;
+  grid-gap: 10px;
+  width: 80%;
   position: relative;
   top: -50px;
   @media only screen and (min-width: 1080px) {
+    grid-gap: 25px;
     width: 50%;
   }
 `;

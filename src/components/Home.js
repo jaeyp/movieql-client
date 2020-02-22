@@ -17,8 +17,11 @@ const Container = styled.div`
   top: 30px;
   left: 40px;
   .home {
-    font-size: 2.4em;
+    font-size: 1.8em;
     color: white;
+    @media only screen and (min-width: 1080px) {
+      font-size: 2.4em;
+    }
   }
   .home:hover {
     color: gray;

@@ -60,30 +60,42 @@ const Header = styled.header`
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
   width: 100%;
 `;
 
+
 const Title = styled.h1`
-  font-size: 60px;
+  margin-top: 12%;
+  font-size: 32px;
   font-weight: 600;
   margin-bottom: 10px;
+  @media only screen and (min-width: 1080px) {
+    margin-top: 4%;
+    font-size: 80px;
+  }
 `;
 
 const Box = styled.div`
-  width: 60%;
+  width: 80%;
   height: 30%;
   margin: 1% 15%;
+  @media only screen and (min-width: 1080px) {
+    width: 60%;
+  }
 `;
 
 const Biography = styled.div`
-  font-size: 18px;
+  font-size: 14px;
   /* multi-line truncation with ellipsis */
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;  
+  @media only screen and (min-width: 1080px) {
+    font-size: 18px;
+  }
 `;
 
 const Loading = styled.div`

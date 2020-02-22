@@ -18,14 +18,13 @@ const Button = styled.div`
   color: ${props => props.id === props.checked ? "white" : "palevioletred"};
 
   display: inline-block;
-  font-size: 1em;
-  font-weight: 500;
+  font-size: 0.9em;
+  font-weight: 700;
   text-align: center;
-  margin: 0.6em;
-  padding: 0.25em 1em;
-  border: ${props => props.id === props.checked ? "1px solid white" : "4px solid palevioletred"};
-  border-radius: 12px;
-  width: 100px;
+  margin: 0.4em;
+  padding: 0.1em 0.8em 0.2em 0.8em;
+  border: ${props => props.id === props.checked ? "1px solid white" : "2px solid palevioletred"};
+  border-radius: 6px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   :hover {
     cursor:pointer;
@@ -33,6 +32,7 @@ const Button = styled.div`
   @media only screen and (min-width: 1080px) {
     font-size: 1.2em;
     margin: 1em;
-    width: 120px;
+    padding: 0.2em 1em 0.3em 1em;
+    border-radius: 12px;
   }
 `
