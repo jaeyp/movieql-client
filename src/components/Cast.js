@@ -47,19 +47,21 @@ const Button = styled.div`
   color: white;
 
   display: inline-block;
-  font-size: 0.8em;
+  font-size: 0.6em;
   font-weight: 500;
   text-align: center;
-  margin: 0.4em;
+  margin: 0.2em;
   padding: 0em 0.5em 0.1em 0.5em;
   border: 4px solid palevioletred;
-  border-radius: 12px;
+  border-radius: 6px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   :hover {
     cursor:pointer;
     color: black;
   }
   @media only screen and (min-width: 1080px) {
+    font-size: 0.8em;
     margin: 0em;
+    border-radius: 12px;
   }
 `

@@ -67,12 +67,12 @@ const Container = styled.div`
 
 const Column = styled.div`
   margin-left: 5%;
-  width: 50%;
-  height: 70%;
+  width: 60%;
+  height: 80%;
 `;
 
 const Title = styled.h1`
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 500;
   margin-bottom: 15px;
   @media only screen and (min-width: 1080px) {
@@ -82,7 +82,7 @@ const Title = styled.h1`
 `;
 
 const Subtitle = styled.h4`
-  font-size: 20px;
+  font-size: 16px;
   color: #252829;
   font-weight: bold;
   @media only screen and (min-width: 1080px) {
@@ -92,7 +92,7 @@ const Subtitle = styled.h4`
 `;
 
 const Description = styled.p`
-  font-size: 20px;
+  font-size: 14px;
   margin-top: 15px;
   @media only screen and (min-width: 1080px) {
     font-size: 28px;
@@ -101,8 +101,8 @@ const Description = styled.p`
 
 const Poster = styled.div`
   margin-right: 5%;
-  width: 30%;
-  height:70%;
+  width: 25%;
+  height:80%;
   border-radius: 7px;
   background-color: transparent;
   background-image: url(${props => props.bg});
