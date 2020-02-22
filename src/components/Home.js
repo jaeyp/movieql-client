@@ -14,8 +14,12 @@ export default () => {
 
 const Container = styled.div`
   position: absolute;
-  top: 30px;
-  left: 40px;
+  top: 20px;
+  left: 20px;
+  @media only screen and (min-width: 1080px) {
+    top: 30px;
+    left: 40px;
+  }
   .home {
     font-size: 1.8em;
     color: white;
