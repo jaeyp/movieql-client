@@ -13,7 +13,11 @@ Source code except for GraphQL pieces follows the Javascript conventions.
 ~> yarn install
 ~> yarn start
 ```
+
 ## Deploy project
 ```bash
 ~> now
 ```
+
+## MovieQL Server
+[Playground](https://movieql-server.now.sh/graphql)
