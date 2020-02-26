@@ -9,14 +9,15 @@ Source code except for GraphQL pieces follows the Javascript conventions.
 
 ## Run project
 ```bash
-~> git clone https://github.com/jaeyp/movieql-client
-~> yarn install
-~> yarn start
+~$ git clone https://github.com/jaeyp/movieql-client
+~$ cd movieql-client
+~$ yarn install
+~$ yarn start
 ```
 
 ## Deploy project
 ```bash
-~> now
+~$ now
 ```
 
 ## MovieQL Server
