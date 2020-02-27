@@ -7,7 +7,7 @@ Source code except for GraphQL pieces follows the Javascript conventions.
 * **PascalCase** for types(classes).
 * **UPPERCASE_SNAKE_CASE** for constants.
 
-## Run project
+## How to run a project
 ```bash
 ~$ git clone https://github.com/jaeyp/movieql-client
 ~$ cd movieql-client
@@ -15,7 +15,7 @@ Source code except for GraphQL pieces follows the Javascript conventions.
 ~$ yarn start
 ```
 
-## Deploy project
+## How to deploy a project
 ```bash
 ~$ now
 ```
